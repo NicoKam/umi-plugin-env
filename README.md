@@ -16,16 +16,18 @@ npm install umi-plugin-env -D
 export default {
   // ...other config
   env: {
-    keys: ['YOUR_ENV_NAME', 'YOU_WILL_GOT_EMPTY_STRING_IF_VARIABLE_NOT_EXISTS'],
+    envKeys: ['YOUR_ENV_NAME', 'YOU_WILL_GOT_EMPTY_STRING_IF_VARIABLE_NOT_EXISTS'],
+    argvKeys: ['customArgName'],
   },
 };
 ```
 
 ```js
 // project file xxx.js
-import { env } from 'umi';
+import { env, argv } from 'umi';
 
 console.log(env['YOUR_ENV_NAME']);
+console.log(argv.customArgName);
 ```
 
 ![snapshot1](./assets/pic1.png)

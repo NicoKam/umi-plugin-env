@@ -1,5 +1,6 @@
 {
   "name": "umi-plugin-env",
+  "description": "umi3 plugin of passing process.env and argv to you runtime environment.",
   "version": "0.0.1",
   "main": "./lib/index.js",
   "module": "./esm/index.js",
